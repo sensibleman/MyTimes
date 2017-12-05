@@ -1,23 +1,38 @@
-*{border: 1px solid black}
+/**{border: 1px solid black}*/
 
 .header {
   display:flex;
   align-items:center;
+  justify-content:space-between;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  justify-content:center;
+  border-bottom: 1px solid black;
+  height: 80px;
 }
 .logo {
   color:MediumAquamarine;
   display:inline-flex;
   align-items:center;
+  padding-left: 20px;
+  padding-right: 12px;
 }
 .logo img{
   padding-right:12px;
 }
+
 p {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+}
+nav span {
+  display:inline-block;
+  padding: 20px 10px;
+}
+.header nav{
+  padding-right:40px;
+}
+a {
+  color:black;
 }
