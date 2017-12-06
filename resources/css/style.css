@@ -1,4 +1,8 @@
-*/*{border: 1px solid black}*/
+*{border: 1px solid black}
+.header-container {
+  display:flex;
+  align-items:flex-start;
+}
 
 .header {
   display:flex;
@@ -13,6 +17,7 @@
   width:100%;
   z-index:1;
   position:fixed;
+  margin-top:0;
 }
 .logo {
   color:MediumAquamarine;
@@ -42,10 +47,12 @@ a {
 .main {
   display:flex;
   padding-top:81px;
+  justify-content:space-between;
 }
 .column{
   display:flex;
   flex-direction:column;
+  margin-right:32px;
 }
 .column.large {
   width: 630px;
@@ -56,4 +63,19 @@ a {
 }
 .column.small {
   width:240px;
+}
+.wine-story .image-content{
+  display:flex;
+  height:300px;
+  background-image:url("images/img-wine.png");
+}
+.image-content p {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+
 }
