@@ -1,4 +1,4 @@
-/**{border: 1px solid black}*/
+*/*{border: 1px solid black}*/
 
 .header {
   display:flex;
@@ -9,6 +9,10 @@
   font-weight: bold;
   border-bottom: 1px solid black;
   height: 80px;
+  background-color: white;
+  width:100%;
+  z-index:1;
+  position:fixed;
 }
 .logo {
   color:MediumAquamarine;
@@ -24,7 +28,6 @@
 p {
   font-family: Verdana;
   font-size: 14px;
-  font-weight: bold;
 }
 nav span {
   display:inline-block;
@@ -35,4 +38,22 @@ nav span {
 }
 a {
   color:black;
+}
+.main {
+  display:flex;
+  padding-top:81px;
+}
+.column{
+  display:flex;
+  flex-direction:column;
+}
+.column.large {
+  width: 630px;
+
+}
+.column.medium{
+  width:300px;
+}
+.column.small {
+  width:240px;
 }
