@@ -1,4 +1,4 @@
-*{border: 1px solid black}
+/*{border: 1px solid black}*/
 body {
   margin-top:0;
 }
@@ -52,13 +52,17 @@ a {
 }
 .column.large {
   width: 630px;
+  display:flex;
+
 
 }
 .column.medium{
   width:300px;
+  flex-grow:1;
 }
 .column.small {
   width:240px;
+  flex-grow:1;
 }
 .wine-story .image-content{
   display:flex;
@@ -96,4 +100,16 @@ a {
  font-family: Georgia;
  font-size: 17px;
  color: black;
+}
+.story {
+  display:flex;
+  flex-grow:1;
+  flex-direction:column;
+  min-width:275px;
+  padding-right:15px;
+}
+.stories {
+  display:flex;
+  justify-content:space-between;
+  width:600px;
 }
