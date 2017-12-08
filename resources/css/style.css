@@ -1,4 +1,4 @@
-/*{border: 1px solid black}*/
+*{border: 1px solid black}
 body {
   margin-top:0;
 }
@@ -48,7 +48,6 @@ a {
 .column{
   display:flex;
   flex-direction:column;
-  margin-right:32px;
 }
 .column.large {
   width: 630px;
@@ -58,18 +57,20 @@ a {
 }
 .column.medium{
   width:300px;
-  flex-grow:1;
+
 }
 .column.small {
   width:240px;
-  flex-grow:1;
+
 }
 .wine-story .image-content{
   display:flex;
   height:300px;
+  align-items:center;
+  justify-content:center;
   background-image:url("images/img-wine.png");
 }
-.image-content p {
+ .image-content {
   display:flex;
   align-items:center;
   justify-content:center;
@@ -77,6 +78,7 @@ a {
   font-weight: bold;
   font-size: 30px;
   color: white;
+
 }
 #large-font {
   font-size:40px;
@@ -103,13 +105,21 @@ a {
 }
 .story {
   display:flex;
-  flex-grow:1;
   flex-direction:column;
-  min-width:275px;
-  padding-right:15px;
+  width:300px;
 }
 .stories {
   display:flex;
   justify-content:space-between;
-  width:600px;
+}
+.text-content {
+  height:250px;
+}
+.newsbites h2{
+  font-size: 16px;
+  font-weight: bold;
+  text-align:center;
+}
+.image-content p {
+  margin: 0px 20px;
 }
